@@ -1,0 +1,9 @@
+{
+	"name": "jcla-data-factory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6f57f633-011a-4a25-af6b-89a51350dae3",
+		"tenantId": "afe953e4-d198-4bac-83aa-9e775111663c"
+	}
+}
