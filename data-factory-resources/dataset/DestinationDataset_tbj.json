@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_tbj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "connectionToAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "destiny.csv",
+				"container": "destiny"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
