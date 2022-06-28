@@ -1,0 +1,124 @@
+{
+	"name": "SourceDataset_tbj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "connectionToAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "encuesta_aerolinea.csv",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Customer Type",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Type of Travel",
+				"type": "String"
+			},
+			{
+				"name": "Class",
+				"type": "String"
+			},
+			{
+				"name": "Flight Distance",
+				"type": "String"
+			},
+			{
+				"name": "Inflight wifi service",
+				"type": "String"
+			},
+			{
+				"name": "Departure/Arrival time convenient",
+				"type": "String"
+			},
+			{
+				"name": "Ease of Online booking",
+				"type": "String"
+			},
+			{
+				"name": "Gate location",
+				"type": "String"
+			},
+			{
+				"name": "Food and drink",
+				"type": "String"
+			},
+			{
+				"name": "Online boarding",
+				"type": "String"
+			},
+			{
+				"name": "Seat comfort",
+				"type": "String"
+			},
+			{
+				"name": "Inflight entertainment",
+				"type": "String"
+			},
+			{
+				"name": "On-board service",
+				"type": "String"
+			},
+			{
+				"name": "Leg room service",
+				"type": "String"
+			},
+			{
+				"name": "Baggage handling",
+				"type": "String"
+			},
+			{
+				"name": "Checkin service",
+				"type": "String"
+			},
+			{
+				"name": "Inflight service",
+				"type": "String"
+			},
+			{
+				"name": "Cleanliness",
+				"type": "String"
+			},
+			{
+				"name": "Departure Delay in Minutes",
+				"type": "String"
+			},
+			{
+				"name": "Arrival Delay in Minutes",
+				"type": "String"
+			},
+			{
+				"name": "satisfaction",
+				"type": "String"
+			}
+		]
+	}
+}
