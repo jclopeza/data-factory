@@ -204,7 +204,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy from sources to destiny",
+						"name": "Copy from source to destiny",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
