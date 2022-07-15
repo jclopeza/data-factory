@@ -19,6 +19,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "IFRS17-MI"
+		},
 		"annotations": []
 	}
 }
