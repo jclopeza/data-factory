@@ -11,15 +11,15 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'sc-to-azure-resource-manager'
-    subscriptionId: '47e725a8-2079-43d4-bab7-790a71574fab'
+    azureResourceManagerConnection: 'datainnovation_azuredevops_resourcemanager'
+    subscriptionId: 'e59d4026-5b98-4431-8b2e-5e63c9df3fcb'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'rg-data-factory'
+    resourceGroupName: 'dataplatform01-central-p-rg-01'
     location: 'West Europe'
     templateLocation: 'Linked artifact'
     csmFile: 'jcla-data-factory/ARMTemplateForFactory.json'
     csmParametersFile: 'jcla-data-factory/ARMTemplateParametersForFactory.json'
     overrideParameters: |
-      -factoryName "jcla-data-factory-pro"
-      -connectionToAzureBlobStorage_connectionString "DefaultEndpointsProtocol=https;AccountName=jclasadf;AccountKey=XVBu6NYoqZUHU0MgXCj2GVrqEullNfln+ADY7WF8avKQ5u9LfUjdijz5gKd97t85ehZrOCMnhYb1+AStSArFsg==;EndpointSuffix=core.windows.net"
+      -factoryName "$(factoryName)"
+      -connectionToAzureBlobStorage_connectionString "$(connectionToAzureBlobStorage_connectionString)"
     deploymentMode: 'Incremental'
