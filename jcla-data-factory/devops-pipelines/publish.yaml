@@ -21,4 +21,5 @@ steps:
     csmParametersFile: 'jcla-data-factory/ARMTemplateParametersForFactory.json'
     overrideParameters: |
       -factoryName "jcla-data-factory-pro"
+      -connectionToAzureBlobStorage_connectionString "DefaultEndpointsProtocol=https;AccountName=jclasadf;AccountKey=XVBu6NYoqZUHU0MgXCj2GVrqEullNfln+ADY7WF8avKQ5u9LfUjdijz5gKd97t85ehZrOCMnhYb1+AStSArFsg==;EndpointSuffix=core.windows.net"
     deploymentMode: 'Incremental'
